@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/szemeskaroly/Workspaces/IntelliJ_IDEA_Workspaces/Andika/PointsOfInterest/src</OriginalElement>
+  <nodes>
+    <node x="192.5" y="1652.0">view.UserMenu</node>
+    <node x="355.0" y="1610.5">utils.DataSeeder</node>
+    <node x="594.0" y="2334.5">Main</node>
+    <node x="-84.5" y="886.0">view.Menu</node>
+    <node x="1010.5" y="286.0">model.user.User</node>
+    <node x="994.5" y="946.0">model.user.UserUtils</node>
+    <node x="337.0" y="250.0">model.poi.PointOfInterest</node>
+    <node x="1029.0" y="-14.0">model.user.Role</node>
+    <node x="82.5" y="394.0">view.MenuItem</node>
+    <node x="322.0" y="958.0">model.poi.PoiUtils</node>
+    <node x="71.5" y="1432.0">view.MainMenu</node>
+    <node x="640.5" y="850.0">model.comment.Comment</node>
+    <node x="769.5" y="1478.0">model.comment.CommentUtils</node>
+    <node x="-54.5" y="1652.0">view.AdminMenu</node>
+    <node x="563.0" y="1966.0">view.MenuController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="view.MenuController" target="model.comment.CommentUtils" relationship="CREATE">
+      <point x="-56.5" y="-140.0" />
+      <point x="619.5" y="1946.0" />
+      <point x="336.0" y="1946.0" />
+      <point x="336.0" y="1906.0" />
+      <point x="862.75" y="1906.0" />
+      <point x="-93.25" y="188.0" />
+    </edge>
+    <edge source="utils.DataSeeder" target="model.poi.PointOfInterest" relationship="CREATE">
+      <point x="0.0" y="-55.5" />
+      <point x="516.0" y="1586.0" />
+      <point x="616.0" y="1586.0" />
+      <point x="616.0" y="1566.0" />
+      <point x="296.0" y="1566.0" />
+      <point x="296.0" y="926.0" />
+      <point x="396.0" y="926.0" />
+      <point x="396.0" y="746.0" />
+      <point x="386.5" y="746.0" />
+      <point x="-49.5" y="236.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.poi.PointOfInterest" relationship="TO_MANY">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="1176.0" y="1886.0" />
+      <point x="1176.0" y="1426.0" />
+      <point x="976.0" y="1426.0" />
+      <point x="976.0" y="786.0" />
+      <point x="516.0" y="786.0" />
+      <point x="516.0" y="746.0" />
+      <point x="485.5" y="746.0" />
+      <point x="49.5" y="236.0" />
+    </edge>
+    <edge source="utils.DataSeeder" target="model.user.User" relationship="CREATE">
+      <point x="0.0" y="-55.5" />
+      <point x="516.0" y="1586.0" />
+      <point x="616.0" y="1586.0" />
+      <point x="616.0" y="826.0" />
+      <point x="1056.0" y="826.0" />
+      <point x="1056.0" y="706.0" />
+      <point x="1063.25" y="706.0" />
+      <point x="-52.75" y="200.0" />
+    </edge>
+    <edge source="model.comment.CommentUtils" target="model.comment.Comment" relationship="TO_MANY">
+      <point x="93.25" y="-188.0" />
+      <point x="1049.25" y="1446.0" />
+      <point x="936.0" y="1446.0" />
+      <point x="936.0" y="1366.0" />
+      <point x="816.0" y="1366.0" />
+      <point x="816.0" y="1346.0" />
+      <point x="813.75" y="1346.0" />
+      <point x="57.75" y="236.0" />
+    </edge>
+    <edge source="model.comment.CommentUtils" target="model.user.UserUtils" relationship="TO_ONE">
+      <point x="93.25" y="-188.0" />
+      <point x="1049.25" y="1446.0" />
+      <point x="936.0" y="1446.0" />
+      <point x="936.0" y="1386.0" />
+      <point x="1056.0" y="1386.0" />
+      <point x="1056.0" y="1246.0" />
+      <point x="1065.25" y="1246.0" />
+      <point x="-70.75" y="140.0" />
+    </edge>
+    <edge source="view.MenuController" target="view.MainMenu" relationship="CREATE">
+      <point x="-56.5" y="-140.0" />
+      <point x="619.5" y="1946.0" />
+      <point x="336.0" y="1946.0" />
+      <point x="336.0" y="1906.0" />
+      <point x="103.75" y="1906.0" />
+      <point x="-32.25" y="14.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.user.UserUtils" relationship="CREATE">
+      <point x="-56.5" y="-140.0" />
+      <point x="619.5" y="1946.0" />
+      <point x="336.0" y="1946.0" />
+      <point x="336.0" y="1906.0" />
+      <point x="1256.0" y="1906.0" />
+      <point x="1256.0" y="1246.0" />
+      <point x="1206.75" y="1246.0" />
+      <point x="70.75" y="140.0" />
+    </edge>
+    <edge source="model.poi.PoiUtils" target="model.poi.PointOfInterest" relationship="TO_MANY">
+      <point x="67.0" y="-128.0" />
+      <point x="523.0" y="786.0" />
+      <point x="516.0" y="786.0" />
+      <point x="516.0" y="746.0" />
+      <point x="485.5" y="746.0" />
+      <point x="49.5" y="236.0" />
+    </edge>
+    <edge source="view.Menu" target="view.MenuItem" relationship="TO_MANY">
+      <point x="0.0" y="-200.0" />
+      <point x="56.0" y="846.0" />
+      <point x="129.25" y="846.0" />
+      <point x="-46.75" y="92.0" />
+    </edge>
+    <edge source="view.MenuController" target="view.AdminMenu" relationship="TO_ONE">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="51.25" y="1886.0" />
+      <point x="35.25" y="14.0" />
+    </edge>
+    <edge source="model.user.UserUtils" target="model.user.User" relationship="CREATE">
+      <point x="-70.75" y="-140.0" />
+      <point x="1065.25" y="826.0" />
+      <point x="1056.0" y="826.0" />
+      <point x="1056.0" y="706.0" />
+      <point x="1063.25" y="706.0" />
+      <point x="-52.75" y="200.0" />
+    </edge>
+    <edge source="view.MenuController" target="view.UserMenu" relationship="TO_ONE">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="287.75" y="1886.0" />
+      <point x="31.75" y="14.0" />
+    </edge>
+    <edge source="model.user.User" target="model.user.Role" relationship="TO_ONE">
+      <point x="0.0" y="-200.0" />
+      <point x="0.0" y="80.0" />
+    </edge>
+    <edge source="view.AdminMenu" target="view.Menu" relationship="GENERALIZATION">
+      <point x="35.25" y="-14.0" />
+      <point x="51.25" y="1406.0" />
+      <point x="56.0" y="1406.0" />
+      <point x="0.0" y="200.0" />
+    </edge>
+    <edge source="view.UserMenu" target="view.Menu" relationship="GENERALIZATION">
+      <point x="-31.75" y="-14.0" />
+      <point x="224.25" y="1406.0" />
+      <point x="56.0" y="1406.0" />
+      <point x="0.0" y="200.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.user.User" relationship="TO_MANY">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="1296.0" y="1886.0" />
+      <point x="1296.0" y="806.0" />
+      <point x="1216.0" y="806.0" />
+      <point x="1216.0" y="706.0" />
+      <point x="1168.75" y="706.0" />
+      <point x="52.75" y="200.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.poi.PoiUtils" relationship="TO_ONE">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="696.0" y="1886.0" />
+      <point x="696.0" y="1346.0" />
+      <point x="523.0" y="1346.0" />
+      <point x="67.0" y="128.0" />
+    </edge>
+    <edge source="model.poi.PoiUtils" target="model.poi.PointOfInterest" relationship="CREATE">
+      <point x="-67.0" y="-128.0" />
+      <point x="389.0" y="926.0" />
+      <point x="396.0" y="926.0" />
+      <point x="396.0" y="746.0" />
+      <point x="386.5" y="746.0" />
+      <point x="-49.5" y="236.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.user.UserUtils" relationship="TO_ONE">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="1216.0" y="1886.0" />
+      <point x="1216.0" y="1266.0" />
+      <point x="1056.0" y="1266.0" />
+      <point x="1056.0" y="1246.0" />
+      <point x="1065.25" y="1246.0" />
+      <point x="-70.75" y="140.0" />
+    </edge>
+    <edge source="view.MainMenu" target="view.MenuItem" relationship="CREATE">
+      <point x="32.25" y="-14.0" />
+      <point x="168.25" y="1386.0" />
+      <point x="216.0" y="1386.0" />
+      <point x="216.0" y="606.0" />
+      <point x="222.75" y="606.0" />
+      <point x="46.75" y="92.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.comment.CommentUtils" relationship="TO_ONE">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="1049.25" y="1886.0" />
+      <point x="93.25" y="188.0" />
+    </edge>
+    <edge source="view.MenuController" target="view.MainMenu" relationship="TO_ONE">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1886.0" />
+      <point x="168.25" y="1886.0" />
+      <point x="32.25" y="14.0" />
+    </edge>
+    <edge source="model.comment.CommentUtils" target="model.poi.PointOfInterest" relationship="TO_MANY">
+      <point x="93.25" y="-188.0" />
+      <point x="1049.25" y="1446.0" />
+      <point x="936.0" y="1446.0" />
+      <point x="936.0" y="1106.0" />
+      <point x="896.0" y="1106.0" />
+      <point x="896.0" y="786.0" />
+      <point x="516.0" y="786.0" />
+      <point x="516.0" y="746.0" />
+      <point x="485.5" y="746.0" />
+      <point x="49.5" y="236.0" />
+    </edge>
+    <edge source="model.comment.CommentUtils" target="model.user.User" relationship="TO_MANY">
+      <point x="93.25" y="-188.0" />
+      <point x="1049.25" y="1446.0" />
+      <point x="936.0" y="1446.0" />
+      <point x="936.0" y="806.0" />
+      <point x="1216.0" y="806.0" />
+      <point x="1216.0" y="706.0" />
+      <point x="1168.75" y="706.0" />
+      <point x="52.75" y="200.0" />
+    </edge>
+    <edge source="model.user.UserUtils" target="model.user.User" relationship="TO_MANY">
+      <point x="70.75" y="-140.0" />
+      <point x="1206.75" y="806.0" />
+      <point x="1216.0" y="806.0" />
+      <point x="1216.0" y="706.0" />
+      <point x="1168.75" y="706.0" />
+      <point x="52.75" y="200.0" />
+    </edge>
+    <edge source="utils.DataSeeder" target="model.comment.Comment" relationship="CREATE">
+      <point x="0.0" y="-55.5" />
+      <point x="516.0" y="1586.0" />
+      <point x="616.0" y="1586.0" />
+      <point x="616.0" y="1386.0" />
+      <point x="656.0" y="1386.0" />
+      <point x="656.0" y="1366.0" />
+      <point x="698.25" y="1366.0" />
+      <point x="-57.75" y="236.0" />
+    </edge>
+    <edge source="view.MainMenu" target="view.Menu" relationship="GENERALIZATION">
+      <point x="-32.25" y="-14.0" />
+      <point x="103.75" y="1406.0" />
+      <point x="56.0" y="1406.0" />
+      <point x="0.0" y="200.0" />
+    </edge>
+    <edge source="model.comment.CommentUtils" target="model.poi.PoiUtils" relationship="TO_ONE">
+      <point x="93.25" y="-188.0" />
+      <point x="1049.25" y="1446.0" />
+      <point x="936.0" y="1446.0" />
+      <point x="936.0" y="1426.0" />
+      <point x="696.0" y="1426.0" />
+      <point x="696.0" y="1346.0" />
+      <point x="523.0" y="1346.0" />
+      <point x="67.0" y="128.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.comment.Comment" relationship="TO_MANY">
+      <point x="56.5" y="-140.0" />
+      <point x="732.5" y="1946.0" />
+      <point x="736.0" y="1946.0" />
+      <point x="736.0" y="1466.0" />
+      <point x="816.0" y="1466.0" />
+      <point x="816.0" y="1346.0" />
+      <point x="813.75" y="1346.0" />
+      <point x="57.75" y="236.0" />
+    </edge>
+    <edge source="view.MenuController" target="view.AdminMenu" relationship="CREATE">
+      <point x="-56.5" y="-140.0" />
+      <point x="619.5" y="1946.0" />
+      <point x="336.0" y="1946.0" />
+      <point x="336.0" y="1906.0" />
+      <point x="-19.25" y="1906.0" />
+      <point x="-35.25" y="14.0" />
+    </edge>
+    <edge source="Main" target="view.MenuController" relationship="CREATE">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="view.AdminMenu" target="view.MenuItem" relationship="CREATE">
+      <point x="-35.25" y="-14.0" />
+      <point x="-19.25" y="1626.0" />
+      <point x="-104.0" y="1626.0" />
+      <point x="-104.0" y="866.0" />
+      <point x="216.0" y="866.0" />
+      <point x="216.0" y="606.0" />
+      <point x="222.75" y="606.0" />
+      <point x="46.75" y="92.0" />
+    </edge>
+    <edge source="view.MenuController" target="model.poi.PoiUtils" relationship="CREATE">
+      <point x="-56.5" y="-140.0" />
+      <point x="619.5" y="1946.0" />
+      <point x="336.0" y="1946.0" />
+      <point x="336.0" y="1586.0" />
+      <point x="389.0" y="1586.0" />
+      <point x="-67.0" y="128.0" />
+    </edge>
+    <edge source="view.UserMenu" target="view.MenuItem" relationship="CREATE">
+      <point x="31.75" y="-14.0" />
+      <point x="287.75" y="1626.0" />
+      <point x="256.0" y="1626.0" />
+      <point x="256.0" y="866.0" />
+      <point x="216.0" y="866.0" />
+      <point x="216.0" y="606.0" />
+      <point x="222.75" y="606.0" />
+      <point x="46.75" y="92.0" />
+    </edge>
+    <edge source="view.MenuController" target="view.UserMenu" relationship="CREATE">
+      <point x="-56.5" y="-140.0" />
+      <point x="619.5" y="1946.0" />
+      <point x="336.0" y="1946.0" />
+      <point x="336.0" y="1906.0" />
+      <point x="224.25" y="1906.0" />
+      <point x="-31.75" y="14.0" />
+    </edge>
+    <edge source="model.comment.CommentUtils" target="model.comment.Comment" relationship="CREATE">
+      <point x="-93.25" y="-188.0" />
+      <point x="862.75" y="1446.0" />
+      <point x="656.0" y="1446.0" />
+      <point x="656.0" y="1366.0" />
+      <point x="698.25" y="1366.0" />
+      <point x="-57.75" y="236.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="true" x="596.0" y="1192.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
